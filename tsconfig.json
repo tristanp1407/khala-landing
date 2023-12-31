@@ -20,5 +20,5 @@
     "noImplicitThis": false, // Allow 'this' to be of any type
     "strictNullChecks": false // Allow null and undefined on objects not explicitly typed
   },
-  "include": []
+  "include": ["src"]
 }

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom"; // Updated import
+import { Switch, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import routes from "./config";
@@ -10,23 +10,18 @@ const Router = () => {
     <Suspense fallback={null}>
       <Styles />
       <Header />
-      <Routes>
-        {" "}
-        {/* Updated from Switch to Routes */}
+      <Switch>
         {routes.map((routeItem) => {
-          const Component = lazy(
-            () => import(`../pages/${routeItem.component}`)
-          );
           return (
             <Route
               key={routeItem.component}
               path={routeItem.path}
-              element={<Component />} // Updated to use element prop
-              // Removed the exact prop as all routes are exact by default in v6
+              exact={routeItem.exact}
+              component={lazy(() => import(`../pages/${routeItem.component}`))}
             />
           );
         })}
-      </Routes>
+      </Switch>
       {/* <Footer /> */}
     </Suspense>
   );
