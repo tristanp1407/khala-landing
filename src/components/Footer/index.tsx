@@ -52,15 +52,32 @@ const Footer = ({ t }: any) => {
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
-              <Large to="/">{t("Tell us everything")}</Large>
+              {/* <Large to="/">{t("Tell us everything")}</Large> */}
               <Para>
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
+              <a href="mailto:hello@khalla.app">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
+
+              {/* Company Information Section */}
+              <Para>{t(`Company Information:`)}</Para>
+              <Para>
+                {t(`Khala Tech Ltd`)}
+                <br />
+                {t(`Registered in England and Wales`)}
+                <br />
+                {t(`Company No. 15379207`)}
+                <br />
+                {t(
+                  `Registered Office: 30 Lowfields, Little Eversden, Cambridge, UK, CB231HJ`
+                )}
+              </Para>
+              <a href="tel:+447807462252">
+                <Chat>{t(`Call Us`)}</Chat>
+              </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
                 {t("Application Security")}
@@ -68,8 +85,8 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Software Principles")}
               </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            </Col> */}
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
               <Large left="true" to="/">
                 {t("Support Center")}
@@ -77,9 +94,9 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Customer Support")}
               </Large>
-            </Col>
+            </Col> */}
           </Row>
-          <Row justify="space-between">
+          {/* <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
               <Empty />
               <Language>{t("Address")}</Language>
@@ -123,10 +140,10 @@ const Footer = ({ t }: any) => {
                 </LanguageSwitch>
               </LanguageSwitchContainer>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </FooterSection>
-      <Extra>
+      {/* <Extra>
         <Container border={true}>
           <Row
             justify="space-between"
@@ -169,7 +186,7 @@ const Footer = ({ t }: any) => {
             </FooterContainer>
           </Row>
         </Container>
-      </Extra>
+      </Extra> */}
     </>
   );
 };

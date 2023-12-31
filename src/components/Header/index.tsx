@@ -38,7 +38,7 @@ const Header = ({ t }: any) => {
     return (
       <>
         <CustomNavLinkSmall
-          onClick={() => window.open("mailto:tristan.plet@gmail.com", "_blank")}
+          onClick={() => window.open("mailto:hello@khalla.app", "_blank")}
         >
           <Span>{"Contact"}</Span>
         </CustomNavLinkSmall>
