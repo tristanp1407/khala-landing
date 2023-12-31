@@ -6,7 +6,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": false,
+    "strict": false, // Consider turning this to true and fixing type errors for better code quality
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -14,7 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noImplicitAny": false, // Disables explicit any type checking
+    "noImplicitReturns": false, // Do not enforce returning value in all code paths
+    "noImplicitThis": false, // Allow 'this' to be of any type
+    "strictNullChecks": false // Allow null and undefined on objects not explicitly typed
   },
   "include": ["src"]
 }
