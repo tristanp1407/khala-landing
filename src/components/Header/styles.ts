@@ -13,6 +13,8 @@ export const HeaderSection = styled("header")`
 
 export const LogoContainer = styled(Link)`
   display: flex;
+  align-items: center;
+  gap: 20px;
 `;
 
 export const NavLink = styled("div")`

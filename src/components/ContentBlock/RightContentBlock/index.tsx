@@ -41,7 +41,9 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() =>
+                          window.open("https://t.me/KahlaWahlaBot", "_blank")
+                        }
                       >
                         {t(item.title)}
                       </Button>

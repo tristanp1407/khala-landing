@@ -1,13 +1,9 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Master a language faster by chatting with AI",
+  "text": "Discover the thrill of mastering a new language by chatting through Telegram with ChatGPT, transforming each conversation into an exciting adventure in linguistic exploration!",
   "button": [
     {
-      "title": "Explore"
-    },
-    {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "Chat now"
     }
   ]
 }

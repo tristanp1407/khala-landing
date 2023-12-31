@@ -37,10 +37,12 @@ const Header = ({ t }: any) => {
     };
     return (
       <>
-        <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>{t("About")}</Span>
+        <CustomNavLinkSmall
+          onClick={() => window.open("mailto:tristan.plet@gmail.com", "_blank")}
+        >
+          <Span>{"Contact"}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
+        {/* <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <Span>{t("Mission")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
@@ -53,7 +55,7 @@ const Header = ({ t }: any) => {
           <Span>
             <Button>{t("Contact")}</Button>
           </Span>
-        </CustomNavLinkSmall>
+        </CustomNavLinkSmall> */}
       </>
     );
   };
@@ -63,7 +65,9 @@ const Header = ({ t }: any) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <img src="img/logo.png" height="50px" />
+            <h6 style={{ margin: 0 }}>Khala</h6>
+            {/* <SvgIcon src="logo.svg" width="101px" height="64px" /> */}
           </LogoContainer>
           <NotHidden>
             <MenuItem />
