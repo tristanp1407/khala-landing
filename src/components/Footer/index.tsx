@@ -63,7 +63,7 @@ const Footer = ({ t }: any) => {
               {/* Company Information Section */}
               <Para>{t(`Company Information:`)}</Para>
               <Para>
-                {t(`Khala Tech Ltd`)}
+                {t(`Khala AI Ltd`)}
                 <br />
                 {t(`Registered in England and Wales`)}
                 <br />
