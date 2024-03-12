@@ -1,3 +1,5 @@
+import { WithTranslation } from "react-i18next";
+
 export interface ContainerProps {
   border?: boolean;
   children: React.ReactNode;
@@ -17,7 +19,7 @@ export interface SvgIconProps {
   height: string;
 }
 
-export interface InputProps {
+export interface InputProps extends WithTranslation {
   name: string;
   placeholder: string;
   t: any;

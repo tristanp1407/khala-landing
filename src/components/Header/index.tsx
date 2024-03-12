@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
-import { withTranslation } from "react-i18next";
+import { WithTranslation, withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -16,7 +16,7 @@ import {
   Span,
 } from "./styles";
 
-const Header = ({ t }: any) => {
+const Header = ({ t }: WithTranslation) => {
   const [visible, setVisibility] = useState(false);
 
   const showDrawer = () => {

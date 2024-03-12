@@ -1,5 +1,5 @@
 import { Row, Col } from "antd";
-import { withTranslation } from "react-i18next";
+import { WithTranslation, withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
 
@@ -21,12 +21,12 @@ import {
   LanguageSwitchContainer,
 } from "./styles";
 
-interface SocialLinkProps {
+interface SocialLinkProps  {
   href: string;
   src: string;
 }
 
-const Footer = ({ t }: any) => {
+const Footer = ({ t }: WithTranslation) => {
   const handleChange = (language: string) => {
     i18n.changeLanguage(language);
   };

@@ -15,4 +15,4 @@ const Input = ({ name, placeholder, onChange, t }: InputProps) => (
   </Container>
 );
 
-export default withTranslation()(Input);
+export default withTranslation()(Input) ;

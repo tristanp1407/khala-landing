@@ -1,7 +1,7 @@
-import { withTranslation } from "react-i18next";
+import { withTranslation, WithTranslation } from "react-i18next";
 import { Container, TextWrapper, Content } from "./styles";
 
-interface Props {
+interface Props extends WithTranslation {
   title: string;
   content: string;
   t: any;
@@ -18,4 +18,4 @@ const Block = ({ title, content, t }: Props) => {
   );
 };
 
-export default withTranslation()(Block);
+export default withTranslation()(Block) ;
