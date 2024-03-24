@@ -64,10 +64,10 @@ const PrivacyPolicy: React.FC = () => {
       <h4>Contacting Us:</h4>
       <p>
         If you have any questions about this Privacy Policy, the practices of
-        this App, or your dealings with this App, please contact us at [Your
-        contact information].
+        this App, or your dealings with this App, please contact us at
+        hello@khala.app.
       </p>
-      <p>This document was last updated on [Date of Last Update].</p>
+      <p>This document was last updated on 24th March 2024.</p>
     </div>
   );
 };
