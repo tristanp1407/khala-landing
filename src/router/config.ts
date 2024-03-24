@@ -14,6 +14,11 @@ const routes = [
     exact: true,
     component: "PrivacyPolicy",
   },
+  {
+    path: ["/", "/terms-of-service"],
+    exact: true,
+    component: "TermsOfService",
+  },
 ];
 
 export default routes;
